@@ -129,51 +129,50 @@ function Form() {
               <span className="non-valid">{formError.username}</span>
             </div>
           </Row>
+
+          <div className="form-group">
+            <label htmlFor="email" className="form-label">
+              Email
+            </label>
+            <input
+              className="form-control"
+              name="email"
+              onChange={onChangeHandler}
+              value={formData.email}
+            />
+            <span className="non-valid">{formError.email}</span>
+          </div>
+          <Row />
+
           <Row>
             <div className="form-group">
-              <label htmlFor="email" className="form-label">
-                Email
+              <label htmlFor="password" className="form-label">
+                Password
               </label>
               <input
                 className="form-control"
-                name="email"
+                name="password"
+                type="password"
                 onChange={onChangeHandler}
-                value={formData.email}
+                value={formData.password}
               />
-              <span className="non-valid">{formError.email}</span>
+              <span className="non-valid">{formError.password}</span>
             </div>
-            <Row />
+          </Row>
 
-            <Row>
-              <div className="form-group">
-                <label htmlFor="password" className="form-label">
-                  Password
-                </label>
-                <input
-                  className="form-control"
-                  type="password"
-                  name="password"
-                  onChange={onChangeHandler}
-                  value={formData.password}
-                />
-                <span className="non-valid">{formError.password}</span>
-              </div>
-            </Row>
-
-            <Row>
-              <div className="form-group">
-                <label htmlFor="cpassword" className="form-label">
-                  Confirm Password
-                </label>
-                <input
-                  className="form-control"
-                  type="password"
-                  name="cpassword"
-                  onChange={onChangeHandler}
-                  value={formData.cpassword}
-                />
-              </div>
-            </Row>
+          <Row>
+            <div className="form-group">
+              <label htmlFor="cpassword" className="form-label">
+                Confirm Password
+              </label>
+              <input
+                className="form-control"
+                name="cpassword"
+                type="password"
+                onChange={onChangeHandler}
+                value={formData.cpassword}
+              />
+            </div>
           </Row>
 
           <Row>
@@ -312,7 +311,7 @@ function Form() {
           <Row>
             <div className="form-group">
               <label htmlFor="gender" className="form-label">
-                How Did You Hear About Us
+                How Did You Hear About Us !
               </label>
               <div>
                 <div>
